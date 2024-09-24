@@ -3,11 +3,31 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="adaptive.css">
+    <link rel="stylesheet" href="desktop.js">
+    <link rel="stylesheet" href="tablet.js">
+    <link rel="stylesheet" href="mobile.js">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bansko Adventures</title>
+    <script>
+        if (isMobile()) {
+         console.log("Mobile device detected");
+        } else {
+         console.log("Desktop device detected");
+        }
+
+        function isMobile() {
+        const minWidth = 768; // Minimum width for desktop devices
+         return window.innerWidth < minWidth || screen.width < minWidth;
+        }
+
+        if (isMobile()) {
+         console.log("Mobile device detected");
+        } else {
+         console.log("Desktop device detected");
+        }
+    </script>
 </head>
 <body>
     <header>
