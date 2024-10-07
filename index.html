@@ -3,31 +3,15 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="desktop.js">
-    <link rel="stylesheet" href="tablet.js">
-    <link rel="stylesheet" href="mobile.js">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="./script.js"></script>
+
     <title>Bansko Adventures</title>
-    <script>
-        if (isMobile()) {
-         console.log("Mobile device detected");
-        } else {
-         console.log("Desktop device detected");
-        }
 
-        function isMobile() {
-        const minWidth = 768; // Minimum width for desktop devices
-         return window.innerWidth < minWidth || screen.width < minWidth;
-        }
-
-        if (isMobile()) {
-         console.log("Mobile device detected");
-        } else {
-         console.log("Desktop device detected");
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -50,39 +34,46 @@
     <main>
         <section id="offer" class="offer">
             <h3>WHAT WE OFFER</h3>
-            <p>We are a very friendly team.</p>
-            <p>We offer you an unforgetable holiday in Bansko. In our team, we have people for each sport you want. So, we have a team for skiing,
-                 if you can not ski, it is no problem, the teachers will teach you. After that you will be in the ski team and you will have fun in
-                 the mountain while skiing. Also, we have a professional team with who you can go skiing in Todorka peak, which is one of the
-                 most impressive and beautiful granite peaks in Pirin. It is 2,756 meters high and is located on the Todorino side ridge, which is 
-                 a short ridge with three peaks - Big, Small and Middle Todorka. And at least but not last, we have a team of expert hikers.
-                 There in the spring or summer you can go with them and conquer all the beautiful mountain peaks </p>
+            <p>We are a friendly team offering unforgettable holidays in Bansko. Our team includes experts in various sports.</p>
+            <p>We also have a professional team to guide you in skiing at Todorka Peak, one of the most impressive and beautiful granite peaks in Pirin, standing at 2,756 meters high.</p>
+            <ul>
+                <li><strong>Hiking and Trekking:</strong> Explore the majestic Pirin mountains with our experienced guides.</li>
+                <li><strong>Rock Climbing:</strong> Learn rock climbing techniques from our skilled instructors.</li>
+                <li><strong>Mountain Biking:</strong> Ride through scenic trails with our expert bikers.</li>
+            </ul>
         </section>
         <section id="about us" class="our-team">
             <div class="our-team-wrapper">
-                <h3>OUR FABULOUS TEAM</h3>
-                <p>Here, you can read an info for everyoone of us.</p>
+                <h3>The Team</h3>
+                <p>Our team consists of passionate and experienced professionals who love the mountains and are eager to share their knowledge with you.</p>
                 <ul>
                     <li>
-                        <p>Ivan Nikolov</p>
+                        <p><strong>Ivan Nikolov:</strong></p>
+                        <p>Expert Ski Instructor</p>
                         <p>Bansko, Bulgaria</p>
                     </li>
                     <li>
-                        <p>Yana Marinova</p>
+                        <p><strong>Petya Asenova:</strong></p>
+                        <p>Expert Snowboard Instructor</p>
                         <p>Plovdiv, Bulgaria</p>
                     </li>
                     <li>
-                        <p>Lily Blagoeva</p>
+                        <p><strong>Maria Hristova:</strong></p>
+                        <p>Mountain Guide and Climbing Specialist</p>
                         <p>Blagoevgrad, Bulgaria</p>
                     </li>
                     <li>
-                        <p>Rosen Todorov</p>
+                        <p><strong>Hristo Petrov:</strong></p>
+                        <p>Professional Mountain Biker</p>
                         <p>Bansko, Bulgaria</p>
                     </li>
                 </ul>
             </div>
         </section>
         <section id="motivation" class="motivation">
+            <h3>Our Motivation</h3>
+            <p>We believe in the power of nature to heal and inspire.</p>
+            <p>Our mission is to provide you with memorable adventures that rejuvenate your spirit and connect you with the beauty of Bansko.</p>
             <ul>
                 <li>
                     <h4>In every conditions</h4>
@@ -103,19 +94,19 @@
 
         </section>
         <section id="blog" class="blog-news">
-            <h3>BLOG NEWS</h3>
-            <p>Here, you can see what we plan to do in the next week and you can call us if you want to go with our team!</p>
+            <h3>Blog News</h3>
+            <p>Stay updated with our latest plans and join us on our upcoming adventures!</p>
             <ul class="blog-list">
                 <li class="news">
                     <section class="content">
-                        <h4>CLIMB MUSALA PEAK IN PIRIN</h4>
-                        <p>Monday, July 07. We leave at 6:30 am from the center of Bansko. Maximum people 20. We are waiting for you!</p>
+                        <h4>Climb Musala Peak in Pirin</h4>
+                        <p>Monday, July 07. Departure at 6:30 am from the center of Bansko. Maximum 20 people. Join us!</p>
                     </section>
                 </li>
                 <li class="news">
                     <section class="content">
-                        <h4>CLIMB KONCHETO PEAK IN PIRIN</h4>
-                        <p>Saturday, July 12. We leave at 7:00 am from the center of Bansko. Maximum people 15. We are wating for you!</p>
+                        <h4>Climb Koncheto Peak in Pirin</h4>
+                        <p>Saturday, July 12. Departure at 7:00 am from the center of Bansko. Maximum 15 people. Join us!</p>
                     </section>
                 </li>
             </ul>
@@ -139,7 +130,7 @@
             <span>Subscribe to our newsletter</span>
           <input type="text" placeholder="Enter your e-mail address"/>
         </div>
-        <p>© Copyright 2025 All Rights Reserved</p>
+        <p>© 2025 All Rights Reserved</p>
     </footer>
 </body>
 </html>

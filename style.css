@@ -59,10 +59,16 @@ header nav {
     background-color: #111; 
 }
 
+
 .floating-menu::after {
     content: "";
     display: table;
     clear: both;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
 }
 
 header nav ul li a {
@@ -145,8 +151,71 @@ h3 {
     margin: 0 auto;
 }
 
+/* Pricing Table Styles */
+.pricing {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    font-family: 'Arial', sans-serif;
+}
+
+.pricing h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 2em;
+    color: #409cff98;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: 2px solid #0073e6; /* Dark blue border */
+}
+
+.styled-table thead tr {
+    background-color: #81c2ff;  /* Blue header */
+    color: #ffffff;  /* White text */
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #0073e6; /* Dark blue border for cells */
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #0073e6; /* Dark blue border */
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;  /* Light gray for even rows */
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #e6f2ff;  /* Light blue for odd rows */
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #0073e6;  /* Blue bottom border */
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #0073e6;  /* Blue text for active row */
+}
+
 .motivation {
     padding: 2.5rem 0;
+}
+
+.motivation h3, p {
+    text-align: center;
 }
 
 .motivation ul {
@@ -212,14 +281,14 @@ h3 {
     justify-content: space-around;
     padding-top: 2rem;
 }
-
+/* IDK */
 .blog-news ul .news {
     list-style: none outside;
     display: flex;
     text-align: center;
     flex: 0 0 35%;
     box-shadow: 0 0.3rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
-}
+} 
 
 .blog-news .content {
     width: 15rem;
