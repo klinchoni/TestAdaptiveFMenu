@@ -19,12 +19,19 @@ li {
     list-style: none;
 }
 
-header nav {                                  
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
+header nav {
+    top: 0;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: #7da8cf;
+}
+
+header nav img{
+    width:40px;
+    height: 40px;
 }
 
 .floating-menu {
